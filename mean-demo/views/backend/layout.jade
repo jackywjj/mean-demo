@@ -1,0 +1,33 @@
+doctype html
+html(ng-app='backend')
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/admin/style.css')
+	body
+		nav.navbar.navbar-inverse.navbar-fixed-top
+			div.container-fluid
+				div.navbar-header
+					a(href="").navbar-brand Project Name & LOGO
+			navbar#navbar.navbar-collapse.collapse
+		div.container-fluid
+			div.row
+				div.col-sm-3.col-md-2.sidebar
+					ul.nav.nav-sidebar
+						li.active
+							a(href="#") Overview
+						li
+							a(href="#") Overview
+					ul.nav.nav-sidebar
+						li.active
+							a(href="/backend/adminusers") Admin User
+						li
+							a(href="#") Admin user
+						li
+							a(href="#") Admin User
+				div.col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main
+					block content
+		script(src='/javascripts/angular.js')
+		script(src='/javascripts/angular-resource.js')
+		script(src='/javascripts/angular-route.js')
+		script(src='/javascripts/comm.js')
