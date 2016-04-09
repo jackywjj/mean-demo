@@ -14,17 +14,13 @@ html(ng-app='backend')
 			div.row
 				div.col-sm-3.col-md-2.sidebar
 					ul.nav.nav-sidebar
-						li.active
+						li
 							a(href="#") Overview
 						li
 							a(href="#") Overview
 					ul.nav.nav-sidebar
 						li.active
-							a(href="/backend/adminusers") Admin User
-						li
-							a(href="#") Admin user
-						li
-							a(href="#") Admin User
+							a(href="/backend/adminusers/") Admin User
 				div.col-sm-9.col-sm-offset-3.col-md-10.col-md-offset-2.main.ng-view
 					block content
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js')

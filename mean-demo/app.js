@@ -57,9 +57,14 @@ if (app.get('env') === 'development') {
 	});
 }
 
-// var mongo = require('mongodb');
-// var monk = require('monk');
-// var db = monk('localhost:27017/vidzy');
+var mongoose = require('mongoose');
+var db = mongoose.connect('mongodb://localhost/meandemodb', function (err) {
+	if (err) {
+		console.log('connection error', err);
+	} else {
+		console.log('connection successful');
+	}
+});
 
 // production error handler
 // no stacktraces leaked to user

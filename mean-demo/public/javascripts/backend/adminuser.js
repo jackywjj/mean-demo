@@ -10,7 +10,8 @@ app.config(['$routeProvider', function($routeProvider) {
       controller: 'AddCtrl'
     })
     .otherwise({
-      redirectTo: '/'
+      templateUrl: '/template/backend/adminuser/list.html',
+      controller: 'HomeCtrl'
     });
 }]);
 
